@@ -1,1 +1,1 @@
-To run this plugin you are also going to need EssentialsX plugin, Vault plugin, PlayerNPC plugin, EcoSkills, EcoItems, EcoEnchants, and Talismans.
+You will also need EssentialsX plugin, Vault plugin, PlayerNPC plugin, EcoSkills, EcoItems, EcoEnchants, and Talismans to run this plugin.
