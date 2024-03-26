@@ -1,0 +1,32 @@
+item:
+  item: golden_sword UNBREAKABLE hide_unbreakable hide_attributes
+  display-name: "&6Midas' Sword"
+  lore:
+    - "&7Damage: &#bd0d4e+%15amount%🗡" # (max 27)
+    - "&7Strength: &#db0000+%amount%🪓" # (max 12)
+    - ""
+    - "&6Ability: Greed"
+    - "&7The strength and damage bonus of"
+    - "&7this item is dependent on the"
+    - "&7price paid for it at the &5Dark"
+    - "&5Auction&7!"
+    - "&7The maximum bonus of this item"
+    - "&7is &c12 &7if the bid was"
+    - "&6500,000 Coins &7or higher!"
+    - ""
+    - "&7Price paid: &6%payed%"
+    - "&7Strength Bonus: &#db0000%amount%🪓"
+    - "&7Damage Bonus: &#bd0d4e%amount%🗡"
+    - ""
+    - "&6&lLEGENDARY SWORD"
+  craftable: false
+slot: mainhand
+baseDamage: 15 # (max 27)
+baseAtackSpeed: 1.6
+
+effects: 
+  - id: add_stat
+    args:
+      stat: strength
+      amount: 0 # (max 12)
+conditions: [ ]

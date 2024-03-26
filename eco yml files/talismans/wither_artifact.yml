@@ -1,0 +1,20 @@
+name: "&5Wither Artifact"
+description:
+  - "&7Reduces the damage taken from"
+  - "&7Withers by &a20%&7."
+  - ""
+  - "&5&lEPIC"
+item: player_head non_enchantable:1 HIDE_ENCHANTS texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY0ZTFjM2UzMTVjOGQ4ZmZmYzM3OTg1YjY2ODFjNWJkMTZhNmY5N2ZmZDA3MTk5ZThhMDVlZmJlZjEwMzc5MyJ9fX0=
+craftable: false
+effects:
+  - id: damage_multiplier
+    args:
+       multiplier: 0.80
+    triggers:
+        - take_entity_damage
+    filters:
+       entities: 
+       - wither_skeleton
+       - wither
+       - wither_skull
+conditions: [ ]

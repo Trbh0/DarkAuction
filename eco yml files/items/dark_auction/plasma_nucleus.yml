@@ -1,0 +1,17 @@
+item:
+  item: purple_dye
+  display-name: "&6Plasma Nucleus"
+  lore:
+    - "&7Combine with an &5Overflux Power Orb"
+    - "&7to increase its strength and create"
+    - "&7a &6Plasmaflux Power Orb&7."
+    - ""
+    - "&eRight-click to view recipes!"
+    - ""
+    - "&6&lLEGENDARY"
+  craftable: false
+  recipe: []
+
+base-attack-speed: 1
+
+conditions: []

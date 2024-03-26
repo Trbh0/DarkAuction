@@ -1,0 +1,25 @@
+display-name: "Growth"
+description: "Grants &a+%placeholder%&r %ecoskills_health_name%"
+placeholder: "1 + (%level% * 1) "
+type: normal
+
+targets:
+  - armor
+conflicts: [ ]
+rarity: rare
+max-level: 5
+
+tradeable: false
+discoverable: false
+enchantable: true
+
+effects:
+  - id: add_stat
+    args:
+      stat: health
+      amount: "1 + (%level% * 1) "
+
+conditions: [ ]
+
+dependencies:
+  - EcoSkills
