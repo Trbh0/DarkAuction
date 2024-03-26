@@ -4,10 +4,7 @@ import dev.sergiferry.playernpc.api.NPC;
 import dev.sergiferry.playernpc.api.NPCLib;
 import me.trbh.darkauction.DarkAuction;
 import me.trbh.darkauction.listeners.DarkAuctionStart;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.Particle;
+import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -55,6 +52,21 @@ public class SpawnSirius implements Listener {
                 LocalTime currentTime = LocalTime.now();
                 int currentHour = currentTime.getHour();
                 int currentMinute = currentTime.getMinute();
+
+                String worldName = DarkAuction.getPlugin().getConfig().getString("sirius-world-name");
+                double x = DarkAuction.getPlugin().getConfig().getDouble("sirius-location-x");
+                double y = DarkAuction.getPlugin().getConfig().getDouble("sirius-location-y");
+                double z = DarkAuction.getPlugin().getConfig().getDouble("sirius-location-z");
+
+                if (currentHour % 2 == 1 && currentMinute == 50) {
+                    Bukkit.broadcastMessage(siriusVoice("The &5Dark Auction&r is starting in &b10 minutes&r! Come visit me in the " + worldName + " at " + x + " " + y + " " + z));
+                }
+                if (currentHour % 2 == 1 && currentMinute == 55) {
+                    Bukkit.broadcastMessage(siriusVoice("The &5Dark Auction&r is starting in &b5 minutes&r! Come visit me in the " + worldName + " at " + x + " " + y + " " + z));
+                }
+                if (currentHour % 2 == 1 && currentMinute == 59) {
+                    Bukkit.broadcastMessage(siriusVoice("The &5Dark Auction&r is starting in &b1 minute&r! Come visit me in the " + worldName + " at " + x + " " + y + " " + z));
+                }
 
                 if (currentHour % 2 == 0 && currentMinute == 0) {
 
