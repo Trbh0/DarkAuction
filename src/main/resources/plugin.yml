@@ -1,0 +1,5 @@
+name: DarkAuction
+version: '${project.version}'
+main: me.trbh.darkauction.DarkAuction
+api-version: 1.20
+authors: [ Trbh ]

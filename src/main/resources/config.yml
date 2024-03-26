@@ -1,0 +1,5 @@
+sirius-location-x: -6.5
+sirius-location-y: 63
+sirius-location-z: -29.5
+sirius-world-name: "hub"
+min-signed-in-players: 3  # can't be less than 1
